@@ -1,23 +1,16 @@
 <html>
   <head>
     <script type="text/javascript">
-      var a=1;
-      var b="x";
-      c=3;
-      function fonction1()
+      function init()
       {
-        var a=2;
-        b=3;
-        c=1;
-        alert("fonction1 : a vaut "+a+", b vaut "+b+" et c vaut "+c);
+        laDiv1=do cument.createElement('div');
+        laDiv1.setAttribute('id','div1');
+        laDiv2=do cument.getElementById('div2');
+        laDiv2.app endChild(laDiv1);
       }
-      function fonction2(d)
-      {
-        alert("fonction2 :a vaut "+a+", b vaut "+b+", c vaut "+c+" et d vaut "+d);
-      }
-      fonction1();
-      fonction2(a);
     </script>
   </head>
-  <body></body>
+  <body onload='init()'>
+    <div id='div2'></div>
+  </body>
 </html>
