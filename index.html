@@ -1,18 +1,22 @@
 <html>
   <head>
-    <script type="text/javascript">
+    <SCRIPT LANGUAGE="Javascript" SRC="./geometrie/point.js"></SCRIPT>
+      <script>
       function init()
       {
-        laDiv1=document.createElement('div');
-        laDiv1.setAttribute('id','div1');
-        laDiv1.setAttribute('text','hey');
-        laDiv2=document.getElementById('div2');
-        laDiv2.app endChild(laDiv1);
+        canvas = document.getElementById('myCanvas');
+        for(i=1;i<10;i++)
+        {
+          for(j=1;j<10;j++)
+          {
+            point1 = new point(20∗i,20∗j,myCanvas);
+            point1.affiche();
+          }
+        }
       }
     </script>
   </head>
   <body onload='init()'>
-    <div id='div1'></div>
-    <div id='div2'></div>
+    <canvas id="myCanvas" width="200" height="200"/>
   </body>
 </html>
