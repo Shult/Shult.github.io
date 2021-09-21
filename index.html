@@ -1,5 +1,9 @@
 <html>
   <head>
+    <script type="text/javascript">
+        var laDiv1 = document.getElementById(div1);
+        laDiv1.documentElement.innerHTML = "<h1> Bonjour </h1>"
+    </script>
   </head>
   <body onload='init()'>
     <h1>HELLO WORLD</h1>
@@ -9,5 +13,7 @@
       <source type="audio/mp3" src="./audioles/myMp3.mp3 "/>
       Your browser does not support HTML5 audio.
     </audio>
+    
+    <div id="div1"></div>
   </body>
 </html>
