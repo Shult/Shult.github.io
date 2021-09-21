@@ -1,9 +1,8 @@
 <html>
   <head>
     <script type="text/javascript">
-        start();
-        function start()
-        {
+        document.addEventListener("DOMContentLoaded", start())
+        function start() {
           console.log("bonjour le monde");
           var DIV1 = document.getElementById(div1);
           DIV1.insertAdjacentHTML('afterbegin', '<h2>Hello world</h2>');
