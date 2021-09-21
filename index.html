@@ -1,23 +1,13 @@
 <html>
   <head>
-    <SCRIPT LANGUAGE="Javascript" SRC="./geometrie/point.js"></SCRIPT>
-      <script>
-      function init()
-      {
-        canvas = document.getElementById('myCanvas');
-        for(i=1;i<10;i++)
-        {
-          for(j=1;j<10;j++)
-          {
-            point1 = new point(20∗i,20∗j,myCanvas);
-            point1.affiche();
-          }
-        }
-      }
-    </script>
   </head>
   <body onload='init()'>
     <h1>HELLO WORLD</h1>
-    <canvas id="myCanvas" width="200" height="200"/>
+    
+    <audio id="player" controls preload tabindex="0" ontimeupdate="updateCanvas()">
+      <source type="audio/wav" src="./audioles/myWav.wav "/>
+      <source type="audio/mp3" src="./audioles/myMp3.mp3 "/>
+      Your browser does not support HTML5 audio.
+    </audio>
   </body>
 </html>
